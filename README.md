@@ -97,7 +97,7 @@ Below are some screenshots of the final product. Replace the paths with the actu
 
 ### Chat Interface
 
-![Chat Interface](./images/chat_interface.png)
+![Chat Interface](./images/gui.png)
 
 ### Response
 

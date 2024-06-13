@@ -1,0 +1,216 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+  /* background-color: rgb(15, 19, 27); */
+  background-color: rgb(8, 11, 17);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: auto;
+  padding: 20px;
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 10px;
+}
+
+h1 {
+  font-size: 42px;
+  color: white;
+  margin: 0;
+}
+
+.chat-box {
+  background-color: #001c3a;
+  border-radius: 20px;
+  width: 100%;
+  height: 350px;
+  overflow: auto;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.form-control {
+  border-radius: 5px;
+  padding-left: 15px;
+  padding-top: 10px;
+  font-size: 18px;
+  color: black;
+}
+
+#message-input {
+  width: 100%;
+  margin: 0;
+  /* Adjust margins as needed */
+  box-sizing: border-box;
+}
+
+.btn {
+  width: 25%;
+  background-color: #0a4bff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #31b0d5;
+}
+
+.chat-container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.chat-message {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.message-text pre code {
+  font-size: 14px;
+  white-space: pre-wrap;
+}
+
+.user-icon,
+.bot-icon {
+  width: 50px;
+  margin-right: 10px;
+  /* Add space between the icon and the text */
+  margin-left: 10px;
+  /* Add space on the left side of the icon */
+}
+
+.user-message {
+  display: flex;
+  align-items: center;
+  background-color: #4c98af;
+  /* Change background color */
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 10px;
+  /* Add space between messages */
+  border-radius: 20px;
+  /* Make the message rounded */
+  padding: 10px;
+  /* Add padding to the message */
+}
+
+.bot-message {
+  display: flex;
+  align-items: center;
+  background-color: #2196F3;
+  /* Change background color */
+  color: white;
+  font-size: 20px;
+  margin-bottom: 10px;
+  /* Add space between messages */
+  border-radius: 20px;
+  /* Make the message rounded */
+  padding: 10px;
+  /* Add padding to the message */
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  /* Increased margin for space */
+}
+
+.action-buttons button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  /* Added border radius */
+  cursor: pointer;
+}
+
+/* Add space between buttons */
+#gpt2-btn {
+  margin-right: 10px;
+  /* Adjust as needed */
+}
+
+#llama2-btn {
+  margin-left: 10px;
+  /* Adjust as needed */
+}
+
+.action-buttons button:hover {
+  background-color: #0056b3;
+}
+
+.action-buttons button.active {
+  background-color: #00356e;
+  /* Darker blue to indicate selection */
+  color: white;
+}
+
+/* loader */
+
+.loader {
+  border: 8px solid #f3f3f3;
+  /* Light grey */
+  border-top: 8px solid #3498db;
+  /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  /* Loader animation */
+  display: none;
+  /* Initially hidden */
+  margin: 20px auto;
+  /* Center the loader */
+}
+
+/* Loader animation */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
